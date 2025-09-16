@@ -1,0 +1,46 @@
+package emc_java_tutorial;
+class Animal{
+	String name;
+	int age;
+	void makesound() {
+		System.out.println("Animal makes sound");
+	}
+}
+class Dog extends  Animal{
+	String breed;
+	void makesound() {
+		System.out.println("dog barks");
+	}
+	void fetching() {
+		System.out.println("dog is fetching");
+	}
+	
+}
+class Cat extends Animal{
+	String color;
+	void makesound() {
+		System.out.println("cat meows");
+	}
+	void climb() {
+		System.out.println("cat climbs");
+	}
+}
+class Main {
+
+	public static void main(String[] args) {
+	Dog d1 = new Dog();
+	d1.name="lucky";
+	d1.age=2;
+	d1.makesound();
+	d1.fetching();
+	System.out.println(d1.name);
+	System.out.println(d1.age);
+	Cat c2 = new Cat();
+	c2.makesound();
+	c2.color="pink";
+	c2.climb();
+	System.out.println(c2.color);
+
+	}
+
+}
